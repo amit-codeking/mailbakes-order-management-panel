@@ -1,0 +1,16 @@
+export const apiMonitor = (response: any) => {
+  response.ok
+    ? console.group(
+      '%c API_RESPONSE! %c' + response.config.url,
+      'background: #222; color: #bada55; font-size:16px',
+      'background:red;color:white;',
+      response
+    )
+    : console.group(
+      '%c API_RESPONSE! %c' + response.config.url,
+      'background: #222; color: #ff7788; font-size:16px',
+      'background:red;color:white;',
+      response
+    );
+  console.groupEnd();
+};
