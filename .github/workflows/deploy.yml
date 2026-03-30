@@ -1,4 +1,4 @@
-name: Deploy Express App
+name: Deploy Next App
 
 on:
   push:
@@ -28,4 +28,4 @@ jobs:
         
       - name: Restart app
         run: |
-          pm2 restart shopify-order-service 
+          pm2 restart shopify-order-front 
